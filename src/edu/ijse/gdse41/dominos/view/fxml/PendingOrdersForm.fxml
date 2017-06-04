@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPendingOrders" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ecf0f1;" styleClass="mainFxmlClass" stylesheets="@Customer.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.gdse41.dominos.view.controller.PendingOrdersFormController">
+   <children>
+      <Text fill="#1473e6" fontSmoothingType="LCD" layoutX="457.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PENDING ORDERS" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Text>
+      <Label layoutY="594.0" opacity="0.9" prefHeight="106.0" prefWidth="1200.0" style="-fx-background-color: #1b76ff;" />
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1038.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Dominos-Pizza-Logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnMainMenu" buttonType="RAISED" layoutX="598.0" layoutY="628.0" onAction="#btnMainMenu" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #15a9f6;" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="454.0" layoutY="628.0" onAction="#btnLogOut" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #f22613;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblPendingOrders" layoutX="153.0" layoutY="137.0" prefHeight="332.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="tblOrderNo" prefWidth="101.0" text="Order No" />
+          <TableColumn fx:id="tblCustName" prefWidth="165.0" text="Customer Name" />
+            <TableColumn fx:id="tblOrderPrice" prefWidth="126.0" text="Order Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="865.0" layoutY="153.0" opacity="0.9" prefHeight="127.0" prefWidth="188.0" style="-fx-background-color: #1b76ff;" />
+      <JFXButton fx:id="btnMarkAsPaid" buttonType="RAISED" layoutX="902.0" layoutY="199.0" onAction="#setBtnMarkAsPaid" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ffffff;" text="Mark as Paid" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

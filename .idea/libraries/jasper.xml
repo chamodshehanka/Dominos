@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jasper">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/jasper" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/jasper" recursive="false" />
+  </library>
+</component>

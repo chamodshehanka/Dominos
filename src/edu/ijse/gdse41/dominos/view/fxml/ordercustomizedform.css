@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.size-radio-button .dot {
+  -fx-mark-highlight-color: red ;
+  -fx-mark-color: red ;
+}
+.x-accordion-heading .x-accordion-toggle {
+    -fx-background-color: red;
+}

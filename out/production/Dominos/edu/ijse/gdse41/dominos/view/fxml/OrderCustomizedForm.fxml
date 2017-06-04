@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ecf0f1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.gdse41.dominos.view.controller.OrderCustomizedFormController">
+    <stylesheets>
+        <URL value="@ordercustomizedform.css" />
+    </stylesheets>
+   <children>
+      <Accordion layoutX="300.0" layoutY="44.0" prefHeight="267.0" prefWidth="287.0" style="-fx-border-color: #1b76ff;" styleClass="x-accordion-heading">
+        <panes>
+          <TitledPane style="-fx-font-family: Calibri;" text="Size of Crust">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="285.0" style="-fx-background-color: #1b76ff;">
+                     <children>
+                        <JFXRadioButton id="size-radio-button" fx:id="rbMedium" layoutX="68.0" layoutY="41.0" onAction="#sizeOfCrust" prefHeight="21.0" prefWidth="93.0" selected="true" style="-fx-dot-color: #ffffff; -jfx-selected-color: #ffffff; -jfx-unselected-color: #ffffff;" stylesheets="@ordercustomizedform.css" text="Medium" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="17.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="size-radio-button" />
+                              <String fx:value="dot" />
+                           </styleClass>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rbRegular" layoutX="69.0" layoutY="123.0" onAction="#sizeOfCrust" prefWidth="93.0" style="-fx-dot-color: #ffffff; -jfx-selected-color: #ffffff; -jfx-unselected-color: #ffffff;" stylesheets="@ordercustomizedform.css" text="Regular" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="17.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="red-radio-button" />
+                              <String fx:value="dot" />
+                           </styleClass>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rbLarge" layoutX="69.0" layoutY="82.0" onAction="#sizeOfCrust" style="-fx-dot-color: #ffffff; -jfx-selected-color: #ffffff; -jfx-unselected-color: #ffffff;" stylesheets="@ordercustomizedform.css" text="Large" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="17.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="red-radio-button" />
+                              <String fx:value="dot" />
+                           </styleClass>
+                        </JFXRadioButton>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane text="Add extra toppings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="223.0" prefWidth="287.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Extra Cheese">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="131.0" prefWidth="196.0" style="-fx-background-color: #1b76ff;">
+                                       <children>
+                                          <JFXCheckBox fx:id="extraCheese" checkedColor="#15a9f6" layoutX="14.0" layoutY="50.0" onAction="#addExtraCheese" text="Add Extra Cheese" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="18.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Veg Topping">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="207.0" prefWidth="287.0" style="-fx-background-color: #1b76ff;">
+                                       <children>
+                                          <JFXCheckBox fx:id="blackOlives" checkedColor="#15a9f6" layoutX="14.0" layoutY="27.0" onAction="#addBlackOlives" text="Black Olives" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                          <JFXCheckBox fx:id="onions" checkedColor="#15a9f6" layoutX="155.0" layoutY="27.0" onAction="#addOnions" text="Onions" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                          <JFXCheckBox fx:id="cripsCapsicum" checkedColor="#15a9f6" layoutX="14.0" layoutY="61.0" onAction="#addCripsCapsicum" text="Crips Capsicum" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                          <JFXCheckBox fx:id="shallot" checkedColor="#15a9f6" layoutX="155.0" layoutY="61.0" onAction="#addShallot" text="Shallot" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                          <JFXCheckBox fx:id="mushroom" checkedColor="#15a9f6" layoutX="14.0" layoutY="98.0" onAction="#addMushroom" text="Mushroom" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                            <Tab text="Non Veg Topping">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="287.0" style="-fx-background-color: #1b76ff;">
+                                       <children>
+                                          <JFXCheckBox fx:id="devilsChicken" checkedColor="#15a9f6" layoutX="14.0" layoutY="27.0" onAction="#addDevilsChicken" text="Devils Chicken" textFill="WHITE" unCheckedColor="WHITE">
+                                             <font>
+                                                <Font name="Calibri Bold" size="16.0" />
+                                             </font>
+                                          </JFXCheckBox>
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <ImageView fx:id="imgItem" fitHeight="250.0" fitWidth="250.0" layoutX="22.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/VegExtravaganza.jpg" />
+         </image></ImageView>
+      <Text fx:id="lblItemDescription" fill="#1473e6" fontSmoothingType="LCD" layoutX="61.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Description" textAlignment="CENTER" wrappingWidth="479.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutY="330.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #1b76ff;" />
+      <JFXButton fx:id="btnMainMenu1" buttonType="RAISED" layoutX="453.0" layoutY="349.0" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #f22613;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="325.0" layoutY="349.0" onAction="#btnAddtoOrder" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ffffff;" text="Add to Order" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="lblCustomizedPrice" fill="WHITE" layoutX="41.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2065.00">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

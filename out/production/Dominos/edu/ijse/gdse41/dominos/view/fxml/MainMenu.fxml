@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="rootMainMenu" maxHeight="600.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ecf0f1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.gdse41.dominos.view.controller.MainMenuController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1038.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Dominos-Pizza-Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="594.0" opacity="0.9" prefHeight="106.0" prefWidth="1200.0" style="-fx-background-color: #1b76ff;" />
+      <Text fill="#1473e6" fontSmoothingType="LCD" layoutX="485.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAIN MENU" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Text>
+      <Label layoutX="142.0" layoutY="196.0" opacity="0.9" prefHeight="279.0" prefWidth="309.0" style="-fx-background-color: #1b76ff;" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="232.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="247.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/User_100px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="488.0" layoutY="196.0" opacity="0.9" prefHeight="279.0" prefWidth="568.0" style="-fx-background-color: #1b76ff;" />
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="559.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Shopping%20Cart_100px.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="715.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDERS" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Report%20Card_100px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnManageCustomer" buttonType="RAISED" layoutX="218.0" layoutY="380.0" onAction="#btnManageCustomer" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" text="Manage Customer" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMakeOrder" buttonType="RAISED" layoutX="542.0" layoutY="380.0" onAction="#btnMakeOrder" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #ffffff;" text="Make Order" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPendingOrders" buttonType="RAISED" layoutX="871.0" layoutY="380.0" onAction="#btnPendingOrders" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #ffffff;" text="Pending Orders" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="521.0" layoutY="628.0" onAction="#btnLogOut" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #f22613;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAllOrders" buttonType="RAISED" layoutX="693.0" layoutY="380.0" onAction="#setBtnViewAllOrders" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ffffff;" text="View All Orders" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="718.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Transaction%20List_100px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

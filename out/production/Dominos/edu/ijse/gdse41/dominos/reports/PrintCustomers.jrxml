@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-31T23:25:19 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16102068-0fa6-47d4-8c62-768a8756bf92">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="YEN1c3RvbWVyYCAsMTUsMTUsZDhhZTM1NzEtMzcwYi00ZmE2LWJlMWMtNzdmODEwNWI4YzM2Ow=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Load Every Time"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<topPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<leftPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<bottomPen lineWidth="0.5" lineColor="#FFFFFF"/>
+			<rightPen lineWidth="0.5" lineColor="#FFFFFF"/>
+		</box>
+	</style>
+	<subDataset name="CustomerDetails" uuid="ddd51a11-b2df-4512-91b9-22cad1dd98a6">
+		<property name="com.jaspersoft.studio.data.sql.tables" value="ZG9taW5vcy5jdXN0b21lciBBUyAsMTI1LDgyLDU3MGM1MTY0LTdkMzEtNDRiZi1iYWI0LTM2ZmJm&#xA;ZmZkYmE4Mjs="/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Load Every Time"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT dominos.customer.`CID`,
+	dominos.customer.`CName`,
+	dominos.customer.`TPNo`,
+	dominos.customer.`Address`
+FROM dominos.customer]]>
+		</queryString>
+		<field name="CID" class="java.lang.String"/>
+		<field name="CName" class="java.lang.String"/>
+		<field name="TPNo" class="java.lang.Integer"/>
+		<field name="Address" class="java.lang.String"/>
+		<group name="CID">
+			<groupExpression><![CDATA[$F{CID}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM `Customer`]]>
+	</queryString>
+	<field name="CID" class="java.lang.String"/>
+	<field name="CName" class="java.lang.String"/>
+	<field name="TPNo" class="java.lang.Integer"/>
+	<field name="Address" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="143" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="217" splitType="Stretch">
+			<componentElement>
+				<reportElement x="44" y="58" width="500" height="100" uuid="c8b193d7-4466-4d50-ad3b-8affd7aba43a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+					<property name="net.sf.jasperreports.export.headertoolbar.table.name" value=""/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="CustomerDetails" uuid="885e3f9e-52b3-40da-b68b-ca96f1c099bc">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="125" uuid="03b31b42-d023-4df8-88cc-ea6847c69a0b">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="125" height="30" uuid="9e255bef-ac6d-476c-a1e2-031ae7cb57f4"/>
+								<text><![CDATA[CID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="125" height="30" uuid="4aabaf5f-11c9-4df6-ac85-ada24f7ead4c"/>
+								<textFieldExpression><![CDATA[$F{CID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="125" uuid="00d8f25a-f961-4d47-9505-417151efd448">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="125" height="30" uuid="e3834be2-5d7d-405b-806b-f083c5763baa"/>
+								<text><![CDATA[CName]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="125" height="30" uuid="2344bc8c-1b93-40f5-abee-0b2a0d4bdf35"/>
+								<textFieldExpression><![CDATA[$F{CName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="125" uuid="e5ab9805-a5ca-4b1d-a7f7-cb7b1162c943">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="125" height="30" uuid="7f1b9cd6-7d5a-4af0-9f17-fcb9a753d1f1"/>
+								<text><![CDATA[TPNo]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="125" height="30" uuid="ac09ceab-8466-4aab-8119-a5546663b08f"/>
+								<textFieldExpression><![CDATA[$F{TPNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="125" uuid="42f9b0a2-2b39-491f-a659-847acb65d139">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="125" height="30" uuid="6f37dc42-2be8-4870-bf69-0a7290edff92"/>
+								<text><![CDATA[Address]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="125" height="30" uuid="3493556c-f661-4efe-bc9d-283fd3fb0343"/>
+								<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

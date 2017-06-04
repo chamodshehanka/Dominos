@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootViewAllOrders" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ecf0f1;" styleClass="mainFxmlClass" stylesheets="@Customer.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.gdse41.dominos.view.controller.ViewAllOrderFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="1048.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Dominos-Pizza-Logo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblOrder" layoutX="168.0" layoutY="180.0" prefHeight="369.0" prefWidth="804.0" styleClass="mainFxmlClass" stylesheets="@Customer.css">
+        <columns>
+          <TableColumn fx:id="tblOrderId" prefWidth="96.33332824707031" text="Order No" />
+          <TableColumn fx:id="tblCID" prefWidth="120.66665649414062" text="Customer ID" />
+            <TableColumn fx:id="tblCName" prefWidth="154.0" text="Customer Name" />
+            <TableColumn fx:id="tblODate" prefWidth="137.66668701171875" text="Order Date" />
+            <TableColumn fx:id="tblOPrice" prefWidth="135.0" text="Order Price" />
+            <TableColumn fx:id="tblOStatus" prefWidth="129.66668701171875" text="Order Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="211.0" layoutY="109.0" prefHeight="22.0" prefWidth="22.0" style="-fx-background-color: #ffffff;" />
+      <JFXDatePicker fx:id="txtODate" defaultColor="#1b76ff" layoutX="80.0" layoutY="106.0" prefHeight="28.0" prefWidth="160.0" promptText="Order Date" style="-fx-prompt-text-fill: #1b76ff; -fx-text-inner-color: #1b76ff;">
+         <styleClass>
+            <String fx:value="jfx-date-picker" />
+            <String fx:value="date-picker" />
+         </styleClass>
+      </JFXDatePicker>
+      <Label layoutY="594.0" opacity="0.9" prefHeight="106.0" prefWidth="1201.0" style="-fx-background-color: #1b76ff;" />
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="442.0" layoutY="628.0" onAction="#btnLogOut" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #f22613;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMainMenu" buttonType="RAISED" layoutX="574.0" layoutY="628.0" onAction="#btnMainMenu" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #15a9f6;" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnViewOrderDetails" buttonType="RAISED" layoutX="1005.0" layoutY="229.0" onAction="#viewOrderDetails" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" text="View Order Details" textFill="#1473e6">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#1473e6" fontSmoothingType="LCD" layoutX="455.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER DETAILS" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
