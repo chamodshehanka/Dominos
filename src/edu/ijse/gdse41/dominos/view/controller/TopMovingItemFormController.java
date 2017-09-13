@@ -132,7 +132,6 @@ public class TopMovingItemFormController implements Initializable {
     }
 
 
-
     @FXML
     private void chartChanging(ActionEvent actionEvent) throws SQLException, ClassNotFoundException {
         date= String.valueOf(txtODate.getValue());
