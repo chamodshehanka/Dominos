@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="780d13cf-eeb9-43e3-84fe-15ca3533b118" name="Default" comment="This is JavaFX software solution for Domino's restaurant which is made by Chamod Shehanka">
+    <list default="true" id="780d13cf-eeb9-43e3-84fe-15ca3533b118" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dominos/edu/ijse/gdse41/dominos/view/controller/TopMovingItemFormController.class" afterPath="$PROJECT_DIR$/out/production/Dominos/edu/ijse/gdse41/dominos/view/controller/TopMovingItemFormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Dominos/edu/ijse/gdse41/dominos/view/fxml/order.css" afterPath="$PROJECT_DIR$/out/production/Dominos/edu/ijse/gdse41/dominos/view/fxml/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ijse/gdse41/dominos/view/controller/TopMovingItemFormController.java" afterPath="$PROJECT_DIR$/src/edu/ijse/gdse41/dominos/view/controller/TopMovingItemFormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ijse/gdse41/dominos/view/fxml/order.css" afterPath="$PROJECT_DIR$/src/edu/ijse/gdse41/dominos/view/fxml/order.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -669,12 +666,20 @@
       <workItem from="1498457107197" duration="39000" />
       <workItem from="1499662904604" duration="5000" />
       <workItem from="1502683158359" duration="507000" />
-      <workItem from="1505306618694" duration="524000" />
+      <workItem from="1505306618694" duration="565000" />
     </task>
+    <task id="LOCAL-00001" summary="This is JavaFX software solution for Domino's restaurant which is made by Chamod Shehanka">
+      <created>1505307154370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505307154371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210248000" />
+    <option name="totallyTimeSpent" value="210289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="754" extended-state="0" />
