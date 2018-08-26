@@ -13,9 +13,7 @@ public class StartProject extends Application{
     public static boolean isSplashLoaded =false;
         @Override
         public void start(Stage primaryStage)throws Exception{
-          //Parent root=FXMLLoader.load(getClass().getResource("/edu/ijse/gdse41/dominos/view/fxml/DashBoard.fxml"));
             Parent root=FXMLLoader.load(getClass().getResource("/edu/ijse/gdse41/dominos/view/fxml/DashBoard.fxml"));
-
             Scene scene =new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Domino's Management System");
