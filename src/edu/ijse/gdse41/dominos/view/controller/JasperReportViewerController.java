@@ -27,4 +27,24 @@ public class JasperReportViewerController {
         node.requestFocus();
         //((Stage)())
     }
+
+    //Method 2
+    //For Parameterized Custom Query Report..!
+
+    public void viewReport(JasperDesign report){
+
+        try {
+            Connection conn = DBConnection.getDBConnection().getConnection();
+            JasperReport jr = JasperCompileManager.compileReport(report);
+            JasperPrint jp = JasperFillManager.fillReport(jr,null,conn);
+            JasperViewer.viewReport(jp,false);
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (JRException e) {
+            e.printStackTrace();
+        }
+
 }
