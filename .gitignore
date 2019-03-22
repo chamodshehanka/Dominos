@@ -1,0 +1,11 @@
+# User-specific stuff
+/.idea
+
+dist/
+build/
+nbproject/
+out/
+
+.iml/
+.mf/
+build.xml
